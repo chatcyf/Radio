@@ -70,3 +70,12 @@ nginx的网站配置，建议加上这些
 ```
 
 最后的电台流媒体就是个http的链接，去各种播放器调用就行了，附上一个 index.html
+
+
+## 直播的纯音频转播
+
+也很简单，看 https://github.com/chatcyf/LiveRelay 里面的内容
+
+先转推到本地的 restreamer 这个工具，再用这个工具转推到其他地方即可
+
+这个工具里面有icecast的转推方式
