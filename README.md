@@ -43,3 +43,14 @@ docker run -d \
   /etc/liquidsoap/radio.liq
 ```
 
+## NAS推流的部分
+
+依然可以用docker的Liquidsoap，方式都差不多
+
+又或者用虚拟机装个win系统，使用foobar2000之类的播放器随机播放mp3，然后使用 butt 推流
+
+虚拟机的win可能会没声音，因为没声卡，需要安装个虚拟声卡
+
+https://danielnoethen.de/butt/
+
+https://www.mfpud.com/topics/13008/
