@@ -11,6 +11,8 @@ https://www.chatcyf.com/static/radio/
 
 ```sudo apt-get install icecast2``` 
 
+其他系统可以用docker的，都一样
+
 安装的时候改一下登录密码什么的，之后编辑一下 /etc/icecast2/icecast.xml 可以修改端口之类的
 
 ```systemctl start icecast2```
@@ -54,3 +56,17 @@ docker run -d \
 https://danielnoethen.de/butt/
 
 https://www.mfpud.com/topics/13008/
+
+
+## 网页展示部分
+
+nginx的网站配置，建议加上这些
+
+```
+    add_header 'Access-Control-Allow-Origin' '*';
+    add_header 'Access-Control-Allow-Methods' 'GET, HEAD, POST, OPTIONS';
+    add_header 'Access-Control-Allow-Headers' 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization';
+    add_header 'Access-Control-Allow-Credentials' 'true';
+```
+
+最后的电台流媒体就是个http的链接，去各种播放器调用就行了，附上一个 index.html
