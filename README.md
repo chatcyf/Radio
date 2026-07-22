@@ -34,6 +34,7 @@ liquidsoap 的目录是 /home/Liquidsoap
 
 先去新建 /home/Liquidsoap 目录，新建一个 radio.liq 文件，内容见源码目录
 
+之后终端执行
 
 ```
 docker run -d \
@@ -82,4 +83,4 @@ nginx的网站配置，建议加上这些
 
 推流地址大概这样写
 
-```source:loadream@172.17.0.1:1354/chatcyf.mp3```
+```source:password@172.17.0.1:1354/chatcyf.mp3```
