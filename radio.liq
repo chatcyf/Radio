@@ -13,10 +13,10 @@ radio = mksafe(music)
 # 将音频流推送到 Icecast 服务器
 output.icecast(
   %mp3,                  # 推流格式为 mp3
-  host = "154.17.6.128",      # 服务器 IP
+  host = "1.1.1.1",      # 服务器 IP
   port = 1354,           # 端口
   user = "source",       # 默认推流用户名
-  password = "loadream", # 你的推流密码
+  password = "chenyifaer", # 你的推流密码
   mount = "/chenyifaer.mp3", # 挂载点
   name = "Chenyifaer Radio",
   description = "Chenyifaer Radio",
