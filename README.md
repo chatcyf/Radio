@@ -31,3 +31,11 @@ https://www.chatcyf.com/static/radio/
 liquidsoap 的目录是 /home/Liquidsoap
 
 先去新建 /home/Liquidsoap 目录，新建一个 radio.liq 文件，内容见源码目录
+
+```docker run -d \
+  --name liquidsoap \
+  --restart always \
+  -v /www/wwwroot/67373.chatcyf.com:/music:ro \
+  -v /root/radio/radio.liq:/etc/liquidsoap/radio.liq:ro \
+  savonet/liquidsoap:v2.4.5 \
+  /etc/liquidsoap/radio.liq```
